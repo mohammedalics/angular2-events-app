@@ -7,7 +7,7 @@ import { Component } from '@angular/core'
     }
 )
 export class EventsListComponent {
-    event = {
+    event1 = {
         id: 1, 
         name: 'Mohammed', 
         date: '9/26/2036', 
