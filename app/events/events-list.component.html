@@ -1,5 +1,7 @@
 <div>
     <h1> Upcoming events.. </h1>
     <hr>
-    <event-thumbnail [event] = "event1" (eventClick)="handleEventClick($event)"></event-thumbnail>
+    <event-thumbnail #thumbnail [event] = "event1" (eventClick)="handleEventClick($event)"></event-thumbnail>
+    <h3>{{thumbnail.anyProperty}}</h3>
+    <button (click)="thumbnail.printFoo()">call print</button>
 </div>
