@@ -317,9 +317,4 @@ export class EventsListComponent {
       ]
     }
   ]
-
-    handleEventClick(data) {
-        console.log("recieved: " + data);
-        
-    }
 }

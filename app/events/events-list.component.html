@@ -3,9 +3,8 @@
     <hr>
     <div class="row">
         <div *ngFor="let event of events" class="col-md-5">
-            <event-thumbnail #thumbnail [event] = "event" (eventClick)="handleEventClick($event)"></event-thumbnail>
-            <h3>{{thumbnail.anyProperty}}</h3>
-            <button (click)="thumbnail.printFoo()">call print</button>
+            <event-thumbnail [event] = "event"></event-thumbnail>
+            
         </div>
     </div>
     
