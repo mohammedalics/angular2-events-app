@@ -1,7 +1,12 @@
 <div>
     <h1> Upcoming events.. </h1>
     <hr>
-    <event-thumbnail #thumbnail [event] = "event1" (eventClick)="handleEventClick($event)"></event-thumbnail>
-    <h3>{{thumbnail.anyProperty}}</h3>
-    <button (click)="thumbnail.printFoo()">call print</button>
+    <div class="row">
+        <div *ngFor="let event of events" class="col-md-5">
+            <event-thumbnail #thumbnail [event] = "event" (eventClick)="handleEventClick($event)"></event-thumbnail>
+            <h3>{{thumbnail.anyProperty}}</h3>
+            <button (click)="thumbnail.printFoo()">call print</button>
+        </div>
+    </div>
+    
 </div>
