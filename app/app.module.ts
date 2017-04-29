@@ -28,7 +28,19 @@ import { appRoutes } from './routes'
         Error404Component,
         NavBarComponent
         ], 
-    providers: [EventService, ToastrService, EventRouterActivator],
+    providers: [
+        EventService, 
+        ToastrService, 
+        EventRouterActivator,
+        {
+            provide: 'canDeactivateCreateComponent', 
+            useValue: checkDirtyState 
+        }
+        ],
     bootstrap: [EventAppComponent]
 })
 export class AppModule {}
+
+function checkDirtyState (component: CreateEventComponent) {
+    return component.isDirty ? window.confirm('You have not saved this event, do you want to cancel?') : true
+}
