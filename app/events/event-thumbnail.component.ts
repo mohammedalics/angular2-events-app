@@ -1,5 +1,5 @@
 import { Component , Input } from '@angular/core'
-
+import { ToastrService } from '../common/toastr.service'
 @Component(
     {
         selector: 'event-thumbnail', 
