@@ -1,5 +1,6 @@
 import { Component , Input } from '@angular/core'
 import { ToastrService } from '../common/toastr.service'
+import { IEvent } from './index'
 @Component(
     {
         selector: 'event-thumbnail', 
@@ -14,7 +15,7 @@ import { ToastrService } from '../common/toastr.service'
     }
 )
 export class EventThumbnailComponent {
-    @Input() event: any
+    @Input() event: IEvent
 
     getStartTimeClass() {
         const isEarlyStart = this.event && this.event.time === '8:00 am'
