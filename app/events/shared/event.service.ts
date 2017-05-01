@@ -16,7 +16,8 @@ export class EventService {
     }
 
     saveEvent(event) {
-      event.id = 999
+      const nextId = Math.max.apply(null, EVENTS.map(s => s.id))
+      event.id = nextId + 1; 
       event.session = []
       EVENTS.push(event)
     }
