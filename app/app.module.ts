@@ -18,7 +18,7 @@ import {
 import { EventAppComponent } from './events-app.component'
 import { Error404Component } from './errors/404.component'
 import { NavBarComponent } from './nav/navbar.component'
-import { TOASTR_TOKEN, Toastr, JQUERY_TOKEN, CollapsibleWellComponent, SimpleModalComponent } from './common/index'
+import { TOASTR_TOKEN, Toastr, JQUERY_TOKEN, CollapsibleWellComponent, SimpleModalComponent, ModalTriggerDirective } from './common/index'
 import { AuthService } from './user/auth.service'
 import { appRoutes } from './routes'
 
@@ -43,6 +43,7 @@ declare let jQuery: Object;
         NavBarComponent,
         CollapsibleWellComponent, 
         SimpleModalComponent,
+        ModalTriggerDirective,
         DurationPipe
         ], 
     providers: [
