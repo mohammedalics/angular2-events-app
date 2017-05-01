@@ -1,7 +1,6 @@
 import { Component } from '@angular/core'
 import { Router } from '@angular/router'
 import { EventService } from '../shared/event.service'
-import { ToastrService } from '../../common/toastr.service'
 
 @Component(
     {
@@ -20,14 +19,13 @@ import { ToastrService } from '../../common/toastr.service'
 )
 export class CreateEventComponent {
     isDirty: boolean = true
-    constructor(private router: Router, private eventService: EventService, private toastrService: ToastrService) {
+    constructor(private router: Router, private eventService: EventService) {
    }
 
    saveEvent(formValues) {
 
        this.eventService.saveEvent(formValues)
        this.isDirty = false; 
-       this.toastrService.success('Event created successfully')
        this.router.navigate(['/events'])
 
 

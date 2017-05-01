@@ -1,5 +1,4 @@
 import { Component , Input } from '@angular/core'
-import { ToastrService } from '../common/toastr.service'
 import { IEvent } from './index'
 @Component(
     {
