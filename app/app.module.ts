@@ -12,6 +12,8 @@ import {
     CreateSessionComponent,
     SessionListComponent,
     DurationPipe,
+    VoterService,
+    UpvoteComponent,
     EventService
 
 } from './events/index'
@@ -39,6 +41,7 @@ declare let jQuery: Object;
         CreateEventComponent, 
         CreateSessionComponent, 
         SessionListComponent,
+        UpvoteComponent,
         Error404Component,
         NavBarComponent,
         CollapsibleWellComponent, 
@@ -58,6 +61,7 @@ declare let jQuery: Object;
         }, 
         EventRouterActivator,
         EventsListResolver,
+        VoterService,
         AuthService,
         {
             provide: 'canDeactivateCreateComponent', 
