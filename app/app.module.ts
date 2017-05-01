@@ -18,12 +18,12 @@ import {
 import { EventAppComponent } from './events-app.component'
 import { Error404Component } from './errors/404.component'
 import { NavBarComponent } from './nav/navbar.component'
-import { TOASTR_TOKEN, Toastr } from './common/toastr.service'
-import { CollapsibleWellComponent } from './common/collapsible-well.component'
+import { TOASTR_TOKEN, Toastr, JQUERY_TOKEN, CollapsibleWellComponent } from './common/index'
 import { AuthService } from './user/auth.service'
 import { appRoutes } from './routes'
 
-declare let toastr: Toastr
+declare let toastr: Toastr;
+declare let jquery: Object;
 
 @NgModule({
     imports: [
