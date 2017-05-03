@@ -37,21 +37,27 @@ export class EventService {
   }
 
   searchSessions(searchTerm: string) {
-    var results: ISession[] = []
-    EVENTS.forEach(event => {
-      var matchingSessions = event.sessions.filter(session => session.name.toLocaleLowerCase().indexOf(searchTerm.toLocaleLowerCase()) > -1);
-      matchingSessions = matchingSessions.map((session: any) => {
-        session.eventId = event.id;
-        return session;
-      })
-      results = results.concat(matchingSessions);
-    })
 
-    var emitter = new EventEmitter(true);
-    setTimeout(() => {
-      emitter.emit(results)
-    }, 100)
-    return emitter;  
+    return this.http.get("/api/sessions/search?search=").map((response : Response) => {
+      return response.json(); 
+    }).catch(this.handleErrors)
+
+
+    // var results: ISession[] = []
+    // EVENTS.forEach(event => {
+    //   var matchingSessions = event.sessions.filter(session => session.name.toLocaleLowerCase().indexOf(searchTerm.toLocaleLowerCase()) > -1);
+    //   matchingSessions = matchingSessions.map((session: any) => {
+    //     session.eventId = event.id;
+    //     return session;
+    //   })
+    //   results = results.concat(matchingSessions);
+    // })
+
+    // var emitter = new EventEmitter(true);
+    // setTimeout(() => {
+    //   emitter.emit(results)
+    // }, 100)
+    // return emitter;  
   }
 
   private handleErrors(response : Response) {
