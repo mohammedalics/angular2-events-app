@@ -8,9 +8,9 @@ import {
     EventsListComponent, 
     EventThumbnailComponent, 
     EventDetailsComponent, 
-    CreateEventComponent, 
-    EventRouterActivator, 
+    CreateEventComponent,  
     EventsListResolver, 
+    EventResolver, 
     CreateSessionComponent,
     SessionListComponent,
     DurationPipe,
@@ -63,8 +63,9 @@ declare let jQuery: Object;
             provide: JQUERY_TOKEN, 
             useValue: jQuery
         }, 
-        EventRouterActivator,
+
         EventsListResolver,
+        EventResolver,
         VoterService,
         AuthService,
         {
