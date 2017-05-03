@@ -14,6 +14,7 @@ import {
     DurationPipe,
     VoterService,
     UpvoteComponent,
+    LocationValidator,
     EventService
 
 } from './events/index'
@@ -47,6 +48,7 @@ declare let jQuery: Object;
         CollapsibleWellComponent, 
         SimpleModalComponent,
         ModalTriggerDirective,
+        LocationValidator,
         DurationPipe
         ], 
     providers: [
