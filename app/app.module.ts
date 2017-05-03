@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { RouterModule } from '@angular/router'
+import { HttpModule } from '@angular/http'
+
 import {
     EventsListComponent, 
     EventThumbnailComponent, 
@@ -31,7 +33,7 @@ declare let jQuery: Object;
 @NgModule({
     imports: [
         BrowserModule, 
-        FormsModule, ReactiveFormsModule,
+        FormsModule, ReactiveFormsModule, HttpModule,
         RouterModule.forRoot(appRoutes)
     ], 
     declarations: [
