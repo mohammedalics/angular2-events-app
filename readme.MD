@@ -31,11 +31,12 @@ $ nvm use 6.3.0
 ```sh
 $ npm install -g karma-cli@1.0.1
 $ npm install karma@1.3.0 karma-chrome-launcher@2.0.0 karma-jasmine@1.0.2 jasmine-core@2.5.2 @types/jasmine@2.5.38 -D 
-
-### Install Karma & Jasmine
-```sh
-$ npm install 
 ```
+### Install package.json
+```sh
+$ npm install
+```
+
 
 Open your favorite Terminal and run these commands.
 
