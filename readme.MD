@@ -55,7 +55,7 @@ $ karma test
 127.0.0.1:8808
 ```
 
-![screenshot](http://i65.tinypic.com/2wd3tcy.png)
+![screenshot](http://i64.tinypic.com/2d0ydi.jpg)
 
 
 **Enjoy !!!**
