@@ -1,5 +1,7 @@
 # Event App
 
+[![Build Status](https://travis-ci.org/mohammedalics/angular2-events-app.svg?branch=master)](https://travis-ci.org/mohammedalics/angular2-events-app)
+
 Event App is an Angular2 hands-on practice! 
 
 ### Tech
