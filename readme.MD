@@ -58,7 +58,7 @@ $ karma test
 ![screenshot](http://i64.tinypic.com/2d0ydi.jpg)
 
 
-**Enjoy !!!**
+**Enjoy !!**
 
 > practice idea is by pluralsight angular2 course.
 
